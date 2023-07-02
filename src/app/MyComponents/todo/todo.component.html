@@ -1,0 +1,6 @@
+<h1 class="text-center mb-2">ToDo List</h1>
+<app-input-todo-add (addTask)="handleAddTask($event)"></app-input-todo-add>
+
+<div *ngFor="let item of todos" class="container w-25">
+    <app-todo-item [todo_items]="item" (deleteTodo)="todoDelete($event)" ></app-todo-item>
+</div>

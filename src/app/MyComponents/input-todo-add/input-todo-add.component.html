@@ -1,0 +1,10 @@
+<form (submit)="handleAdd($event)" class="w-25 mx-auto mb-5">
+    <div class="mb-3">
+      <label for="title" class="form-label">Add Title</label>
+      <input type="text" class="form-control" id="title" (change)="onChange($event)" >
+    </div>
+
+    <button type="submit" class="btn btn-success">Add Task</button>
+  </form>
+
+  <p>{{newTask}}</p>
